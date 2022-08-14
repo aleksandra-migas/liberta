@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Proza Libre', sans-serif;
+    /*font-family: 'Cormorant Garamond', serif;*/
+    color: rgba(41, 20, 21);
+}
+header{
+    display: flex;
+    min-height: 8vh;
+    width: 100%;
+    background-color: #fcfcfa;
+    z-index: 9999;
+}
+.logo-box{
+  font-weight: 500;
+}
+
+nav {
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    left:0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: #fcfcfa;
+  }
+  .nav-links{
+    display: flex;
+    width:50%;
+    justify-content: space-between;
+    right:0;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    text-decoration: none;
+  }
+  .nav-links li a:hover{
+    color: rgba(56, 136, 148);
+    /*color: rgba(123, 61, 65);*/
+    font-size: 1.2rem;
+  }
+  .nav-links i{
+    font-size: 1.2rem;
+    /*color: rgba(96, 47, 50);*/
+    /*color: rgba(56, 136, 148)*/
+    color: rgba(123, 61, 65);
+  }
+
+  section{
+    height: 92vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcfcfa;
+  }
+  .header{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ .right-box{
+    width: 60%;
+    height: 400px;
+    background-color: red;
+    position:relative;
+ }
+.right{
+  width: 100%;
+  height: 400px;
+  background-image: url(img/pexels-olga-1146242.jpg);
+  background-size: cover;
+  z-index: 9;
+  position: absolute;
+}
+.cloud{
+    width: 100%;
+    height: 400px;
+    top: -50px;
+    right: -50px;
+    position: absolute;
+    background-image:linear-gradient(
+        rgba(241, 248, 248, 0.5),
+        rgba(241, 248, 248, 0.5)
+      ),linear-gradient(
+        rgba(241, 248, 248, 0.5),
+        rgba(241, 248, 248, 0.5)
+      ), 
+      url(img/pexels-donald-tong-139366.jpg);
+    background-size: cover;
+}
+.left{
+  width: 70%;
+ min-height: 400px;
+ /*background-color: aquamarine;*/
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 1rem;
+ margin-right: -150px;
+ z-index: 99;
+}
+.left h1{
+  font-size: 5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+.left h3{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.left a{
+text-decoration: none;
+border:none;
+/*background-color: rgba(96, 47, 50);*/
+background-color: rgba(56, 136, 148);
+/*background-color: rgba(123, 61, 65);*/
+padding: .3rem 1rem;
+color: #fff;
+}
+.text a:hover{
+  background-color:rgba(39, 95, 104);
+}
+
+.box2{
+    padding: 2rem 4rem;
+    margin: 3rem 0;
+    text-align: center;
+    background-color: rgba(234, 214, 215);
+    
+}
+.box2 h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    
+}
+.box3{
+    width: 100%;
+    display:flex;
+    padding:0 2rem;
+}
+.box3 .content{
+width: 50%;
+padding-right: 2rem;
+}
+.box3 h2{
+    font-size: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    padding-bottom: 2rem;
+    color:rgba(123, 61, 65);
+}
+.box3 .img3{
+    width: 50%;
+    height: 400px;
+    background-image: url(img/pexels-anna-shvets-4672710.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box4{
+    width: 100%;
+    display:flex;
+    padding:0 2rem;
+}
+.box4 .content{
+    width: 50%;
+    padding-left: 2rem;
+    background-color: rgba(205, 232, 236);
+    }
+    .box4 h2{
+        font-size: 3rem;
+        font-family: 'Cormorant Garamond', serif;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        
+    }
+    .box4 .img4{
+        width: 50%;
+        height: 400px;
+        background-image: url(img/pexels-herman-io-3584309.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box5{
+    width: 100%;
+   padding:0 2rem;
+    background-color: #fcfcfa;
+    }
+    .box5 h2{
+        font-size: 3rem;
+        font-family: 'Cormorant Garamond', serif;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns:repeat(3, minmax(210px, 1fr));
+        grid-template-rows: 400px 400px;
+        grid-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .card1{
+       height: 400px;
+       display: flex;
+       flex-direction: column;
+    }
+    .pic1{
+        background-image: url(img/pexels-pixabay-349758.jpg);
+        background-size: cover;
+        height: 250px;
+    }
+    .cardtext h4{
+        margin: 1rem 0;
+    }
+    .cardtext p{
+        margin-bottom: 1rem;
+    }
+    .card1 a{
+        text-decoration: none;
+        border:none;
+        /*background-color: rgba(96, 47, 50);*/
+        /*background-color: rgba(56, 136, 148);*/
+        background-color: rgba(123, 61, 65);
+        padding: .3rem 2rem;
+        color: #fff; 
+    }
+    .card2{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+     }
+     .pic2{
+         background-image: url(img/pexels-nita-54300.jpg);
+         background-size: cover;
+         height: 250px;
+     }
+     .cardtext h4{
+         margin: 1rem 0;
+     }
+     .cardtext p{
+         margin-bottom: 1rem;
+     }
+     .card2 a{
+         text-decoration: none;
+         border:none;
+         /*background-color: rgba(96, 47, 50);*/
+         /*background-color: rgba(56, 136, 148);*/
+         background-color: rgba(123, 61, 65);
+         padding: .3rem 2rem;
+         color: #fff; 
+     }
+     .card3{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+     }
+     .pic3{
+         background-image: url(img/pexels-bayu-jefri-1387037.jpg);
+         background-size: cover;
+         height: 250px;
+     }
+     .cardtext h4{
+         margin: 1rem 0;
+     }
+     .cardtext p{
+         margin-bottom: 1rem;
+     }
+     .card3 a{
+         text-decoration: none;
+         border:none;
+         /*background-color: rgba(96, 47, 50);*/
+         /*background-color: rgba(56, 136, 148);*/
+         background-color: rgba(123, 61, 65);
+         padding: .3rem 2rem;
+         color: #fff; 
+     }
